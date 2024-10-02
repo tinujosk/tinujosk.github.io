@@ -1,8 +1,11 @@
 import React from 'react';
 
-function Section({ id, children }) {
+function Section({ id, children, className }) {
   return (
-    <section id={id} className='min-h-screen py-16'>
+    <section
+      id={id}
+      className={`flex items-center min-h-screen py-16 ${className}`}
+    >
       {children}
     </section>
   );
