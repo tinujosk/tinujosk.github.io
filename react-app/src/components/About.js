@@ -4,7 +4,7 @@ import profileImage from '../assets/profile.jpg'; // Add your image file in the 
 
 function About() {
   return (
-    <Section id='about'>
+    <Section id='about' className='bg-gradient-to-r from-blue-900 to-black'>
       <div className='container mx-auto py-16 px-4'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
           {/* Text on the left side */}

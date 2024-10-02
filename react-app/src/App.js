@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
-import Skills from './components/Skills';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Accomplishments from './components/Accomplishments';
@@ -16,7 +15,6 @@ function App() {
       <main className='pt-16'>
         <About />
         <Experience />
-        <Skills />
         <Education />
         <Certifications />
         <Accomplishments />

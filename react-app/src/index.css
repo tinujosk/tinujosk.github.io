@@ -2,24 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes scatter {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(-10px, -10px);
-  }
-  50% {
-    transform: translate(10px, -10px);
-  }
-  75% {
-    transform: translate(-10px, 10px);
-  }
-  100% {
-    transform: translate(0);
-  }
+.rotate-animation {
+  animation: rotate 20s linear infinite; /* 20s rotation duration */
 }
 
-.animate-scatter {
-  animation: scatter 1s ease-in-out forwards;
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
