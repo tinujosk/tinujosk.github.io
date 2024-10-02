@@ -18,12 +18,12 @@ function Header() {
           </li>
           <li>
             <Link
-              to='projects'
+              to='experience'
               smooth={true}
               duration={500}
               className='cursor-pointer hover:text-blue-400'
             >
-              Projects
+              Experience
             </Link>
           </li>
           <li>
@@ -34,6 +34,36 @@ function Header() {
               className='cursor-pointer hover:text-blue-400'
             >
               Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='education'
+              smooth={true}
+              duration={500}
+              className='cursor-pointer hover:text-blue-400'
+            >
+              Education
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='certifications'
+              smooth={true}
+              duration={500}
+              className='cursor-pointer hover:text-blue-400'
+            >
+              Certifications
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='accomplishments'
+              smooth={true}
+              duration={500}
+              className='cursor-pointer hover:text-blue-400'
+            >
+              Accomplishments
             </Link>
           </li>
           <li>

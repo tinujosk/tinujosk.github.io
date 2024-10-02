@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './Section';
 
-function Projects() {
+function Accomplishments() {
   const projects = [
     {
       name: 'Task Manager',
@@ -16,7 +16,7 @@ function Projects() {
   ];
 
   return (
-    <Section id='projects'>
+    <Section id='accomplishments'>
       <div className='container mx-auto py-16 text-center'>
         <h1 className='text-4xl font-bold mb-8'>Projects</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -35,4 +35,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Accomplishments;
