@@ -1,27 +1,94 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import tailwindLogo from '../assets/tailwindcssIcon.svg'; // Path to the Tailwind logo
+import framerMotionLogo from '../assets/framermotionIcon.svg'; // Path to the Framer Motion logo
 
 function Footer() {
   return (
-    <footer className='bg-gray-900 text-white py-6'>
+    <footer className='bg-[#111]  py-6 text-gray-500'>
       <div className='container mx-auto text-center'>
-        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Tinu Jos K. All rights reserved.
+        </p>
         <div className='mt-4'>
           <a
-            href='https://github.com/yourprofile'
-            className='text-gray-400 hover:text-white mx-2'
+            href='https://www.linkedin.com/in/tinujosk/'
             target='_blank'
             rel='noopener noreferrer'
-          >
-            GitHub
-          </a>
-          <a
-            href='https://linkedin.com/in/yourprofile'
-            className='text-gray-400 hover:text-white mx-2'
-            target='_blank'
-            rel='noopener noreferrer'
+            className='mx-2 hover:text-blue-600'
           >
             LinkedIn
           </a>
+          <a
+            href='https://github.com/tinujosk'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='mx-2 hover:text-blue-600'
+          >
+            GithHub
+          </a>
+          <a
+            href='https://stackoverflow.com/users/11564070/tinu-jos-k'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='mx-2 hover:text-blue-600'
+          >
+            StackOverflow
+          </a>
+          <a
+            href='https://www.freelancer.com/u/Tinujos22'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='mx-2 hover:text-blue-600'
+          >
+            Freelancer
+          </a>
+        </div>
+        Built with
+        <div className='container mx-auto flex items-center justify-center space-y-4'>
+          <div className='space-x-2'>
+            <a
+              href='https://tailwindcss.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex items-center'
+            >
+              <img
+                src={tailwindLogo}
+                alt='Tailwind CSS'
+                className='h-6 w-6 mr-2'
+              />
+              <span className='text-teal-600'>Tailwind CSS</span>
+            </a>
+          </div>
+          <div className='flex items-center'>
+            <a
+              href='https://www.framer.com/motion/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex items-center'
+            >
+              <img
+                src={framerMotionLogo}
+                alt='Framer Motion'
+                className='h-6 w-6 mr-2'
+              />
+              <span className='text-blue-600'>React Framer Motion</span>
+            </a>
+          </div>
+          <div className='flex items-center'>
+            <a
+              href='https://www.linkedin.com/in/tinujosk/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex items-center'
+            >
+              <p className='text-sm md:text-base text-yellow-400'>
+                By Tinu Jos K
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 function Header() {
   return (
-    <header className='fixed top-0 w-full bg-gray-900 text-white shadow-lg z-50'>
+    <header className='fixed top-0 w-full bg-black text-gray-500 shadow-lg z-50'>
       <nav className='container mx-auto py-4'>
         <ul className='flex justify-center space-x-6'>
           <li>
@@ -11,7 +11,7 @@ function Header() {
               to='about'
               smooth={true}
               duration={500}
-              className='cursor-pointer hover:text-blue-400'
+              className='cursor-pointer hover:text-blue-600'
             >
               About
             </Link>
@@ -21,19 +21,9 @@ function Header() {
               to='experience'
               smooth={true}
               duration={500}
-              className='cursor-pointer hover:text-blue-400'
+              className='cursor-pointer hover:text-blue-600'
             >
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='skills'
-              smooth={true}
-              duration={500}
-              className='cursor-pointer hover:text-blue-400'
-            >
-              Skills
+              Experience & Skills
             </Link>
           </li>
           <li>
@@ -41,19 +31,9 @@ function Header() {
               to='education'
               smooth={true}
               duration={500}
-              className='cursor-pointer hover:text-blue-400'
+              className='cursor-pointer hover:text-blue-600'
             >
-              Education
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='certifications'
-              smooth={true}
-              duration={500}
-              className='cursor-pointer hover:text-blue-400'
-            >
-              Certifications
+              Education & Certifications
             </Link>
           </li>
           <li>
@@ -61,7 +41,7 @@ function Header() {
               to='accomplishments'
               smooth={true}
               duration={500}
-              className='cursor-pointer hover:text-blue-400'
+              className='cursor-pointer hover:text-blue-600'
             >
               Accomplishments
             </Link>
@@ -71,7 +51,7 @@ function Header() {
               to='contact'
               smooth={true}
               duration={500}
-              className='cursor-pointer hover:text-blue-400'
+              className='cursor-pointer hover:text-blue-600'
             >
               Contact
             </Link>

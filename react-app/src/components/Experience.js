@@ -167,10 +167,7 @@ const Experience = () => {
   });
 
   return (
-    <Section
-      id='experience'
-      className='bg-gradient-to-r from-blue-900 to-black'
-    >
+    <Section id='experience'>
       <div
         className='container mx-auto px-4 max-w-3xl relative'
         ref={experienceRef}
@@ -184,14 +181,12 @@ const Experience = () => {
               key={exp.id}
               className={`p-4 rounded-lg shadow-lg mb-8 relative max-w-md ${
                 index % 2 === 0 ? 'ml-auto' : 'mr-auto'
-              } flex items-center justify-evenly border border-stone-600 ${
-                index % 2 === 0 ? 'border-gold' : 'border-silver'
-              }`}
+              } flex items-center justify-evenly border border-[#333]`}
               initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
               animate={experienceInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 1)',
+                backgroundColor: '#111',
                 color: 'white',
                 zIndex: 2,
               }}
@@ -213,7 +208,7 @@ const Experience = () => {
           ))}
 
           <motion.div
-            className='absolute left-1/2 transform -translate-x-1/2 bottom-0'
+            className='absolute left-1/2 transform -translate-x-1/2 bottom-0 '
             initial={{ height: 0 }}
             animate={experienceInView ? { height: '100%' } : {}}
             transition={{ duration: 3, ease: 'easeInOut' }}
@@ -225,7 +220,7 @@ const Experience = () => {
           />
 
           <motion.svg
-            className='absolute -top-6 left-1/2 transform -translate-x-1/2'
+            className='absolute -top-6 left-1/2 transform -translate-x-1/2 '
             width='20'
             height='20'
             viewBox='0 0 20 20'
@@ -256,7 +251,7 @@ const Experience = () => {
               <img
                 alt={skill.name}
                 src={skill.logo}
-                className='rounded-md shadow-md'
+                className='rounded-md shadow-md  opacity-60'
               />
             </motion.div>
           ))}

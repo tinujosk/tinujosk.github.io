@@ -11,14 +11,14 @@ import ms1 from '../assets/ms1.png';
 const radius = 180;
 
 const images = [
-  { id: 1, src: ms1, alt: 'Microsoft Certification Logo', angle: 27 },
+  { id: 1, src: ms1, alt: 'Microsoft Certification Logo', angle: 30 },
   {
     id: 2,
     src: aws1,
     alt: 'AWS Cloud Practitioner Certification logo',
-    angle: 148,
+    angle: 150,
   },
-  { id: 3, src: aws2, alt: 'AWS Developer Certification Logo', angle: 268 },
+  { id: 3, src: aws2, alt: 'AWS Developer Certification Logo', angle: 270 },
 ];
 
 const initialEducationData = [
@@ -60,7 +60,10 @@ const Education = () => {
   const [educationData, setEducationData] = useState(initialEducationData);
 
   return (
-    <Section id='education' className='bg-gradient-to-r from-blue-900 to-black'>
+    <Section
+      id='education'
+      // className='bg-[linear-gradient(180deg,_black_30%,_#111_50%,_#111_100%)]'
+    >
       <div className='w-full flex justify-evenly'>
         <div>
           <h2 className='text-4xl font-bold text-center text-white mb-16'>
