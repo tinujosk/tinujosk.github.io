@@ -167,19 +167,16 @@ const Experience = () => {
   });
 
   return (
-    <Section id='experience'>
-      <div
-        className='container mx-auto px-4 max-w-3xl relative'
-        ref={experienceRef}
-      >
-        <h2 className='text-4xl font-bold text-center text-white mb-16'>
+    <Section id='experience' className='flex-col md:flex-row justify-evenly '>
+      <div className='mb-12' ref={experienceRef}>
+        <h2 className='text-2xl md:text-4xl  font-bold text-center text-white mb-12 md:mb-16'>
           Experience
         </h2>
         <div className='relative z-10'>
           {experienceData.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className={`p-4 rounded-lg shadow-lg mb-8 relative max-w-md ${
+              className={`p-4 rounded-lg shadow-lg mb-4 relative w-80 md:w-full ${
                 index % 2 === 0 ? 'ml-auto' : 'mr-auto'
               } flex items-center justify-evenly border border-[#333]`}
               initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
@@ -194,7 +191,7 @@ const Experience = () => {
               <img
                 src={exp.companyLogo}
                 alt={`${exp.company} logo`}
-                className='w-40  mr-6 object-contain'
+                className='w-40  mr-6 object-contain hidden md:block'
               />
               <div>
                 <h4 className='text-md font-semibold text-gold'>{exp.title}</h4>
@@ -234,8 +231,10 @@ const Experience = () => {
           </motion.svg>
         </div>
       </div>
-      <div className='container mx-auto py-16 text-center w-1/3'>
-        <h1 className='text-4xl font-bold text-white mb-16'>Skills</h1>
+      <div className='w-full md:w-1/3'>
+        <h1 className='text-2xl md:text-4xl text-center font-bold text-white mb-12 md:mb-16'>
+          Skills
+        </h1>
         <div className='flex flex-wrap justify-center gap-4'>
           {skills.map((skill, index) => (
             <motion.div
@@ -251,7 +250,7 @@ const Experience = () => {
               <img
                 alt={skill.name}
                 src={skill.logo}
-                className='rounded-md shadow-md  opacity-60'
+                className='rounded-md shadow-md opacity-60'
               />
             </motion.div>
           ))}

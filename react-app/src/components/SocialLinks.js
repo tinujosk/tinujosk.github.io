@@ -9,8 +9,8 @@ import freelancerIcon from '../assets/freelancerIcon.svg';
 
 const SocialLinks = () => {
   return (
-    <div className='flex space-x-4 p-5 w-full justify-evenly mt-10'>
-      <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col md:flex-row md:space-x-4 p-5 w-full justify-evenly mt-10'>
+      <div className='flex flex-col justify-center items-center mb-4 md:mb-0'>
         <span className='text-white'>Connect with me on</span>
         <div className='flex space-x-4 p-5 justify-center'>
           <a
@@ -50,7 +50,7 @@ const SocialLinks = () => {
       </div>
       <div className='flex flex-col justify-center items-center'>
         <span className='text-white text-center'>
-          When I don't code, <br></br>I do Graphic Designing
+          When I don't code, I do Graphic Designing
         </span>
         <a
           href='https://www.freelancer.com/u/Tinujos22'

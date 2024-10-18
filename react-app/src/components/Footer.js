@@ -45,9 +45,8 @@ function Footer() {
             Freelancer
           </a>
         </div>
-        Built with
-        <div className='container mx-auto flex items-center justify-center space-y-4'>
-          <div className='space-x-2'>
+        <div className='container mx-auto flex flex-col md:flex-row items-center justify-center space-x-4 md:space-y-0 mt-4'>
+          <div>
             <a
               href='https://tailwindcss.com/'
               target='_blank'
@@ -62,7 +61,7 @@ function Footer() {
               <span className='text-teal-600'>Tailwind CSS</span>
             </a>
           </div>
-          <div className='flex items-center'>
+          <div>
             <a
               href='https://www.framer.com/motion/'
               target='_blank'
@@ -77,7 +76,7 @@ function Footer() {
               <span className='text-blue-600'>React Framer Motion</span>
             </a>
           </div>
-          <div className='flex items-center'>
+          <div>
             <a
               href='https://www.linkedin.com/in/tinujosk/'
               target='_blank'

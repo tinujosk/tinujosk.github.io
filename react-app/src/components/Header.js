@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 
 function Header() {
   return (
-    <header className='fixed top-0 w-full bg-black text-gray-500 shadow-lg z-50'>
+    <header className='fixed top-0 w-screen bg-black text-gray-500 shadow-lg z-50'>
       <nav className='container mx-auto py-4'>
-        <ul className='flex justify-center space-x-6'>
+        <ul className='text-sm md:text-lg flex justify-center space-x-2 md:space-x-6'>
           <li>
             <Link
               to='about'
@@ -36,7 +36,7 @@ function Header() {
               Education & Certifications
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to='accomplishments'
               smooth={true}
@@ -55,7 +55,7 @@ function Header() {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
